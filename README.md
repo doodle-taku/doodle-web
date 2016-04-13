@@ -1,2 +1,2 @@
 # website
-Doodleryの紹介ウェブサイト
+Doodleの紹介ウェブサイト
