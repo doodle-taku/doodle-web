@@ -4,7 +4,22 @@
 	<% include _head %>
 </head>
 <body>
-	<h1>卓展2016のWEBサイト</h1>
+	<canvas class="canvas" id="stage" width="0" height="0"></canvas>
+	<main class="main">
+		<section class="mv" id="js-mv">
+			<h1>
+				<img class="mv-logo" id="js-logo" src="./images/logo.svg" alt="" style="">
+			</h1>
+		</section>
+		<section class="contents">
+			<h2>2016年度卓展 Doodle</h2>
+			<p>Doodleは、遊び心を大切にしたWEB制作をする卓。</p>
+			<form class="register-form" id="registerForm">
+				<input class="name-form" id="nameForm" type="text">
+				<input class="image-form" id="imageForm" type="file">
+			</form>
+		</section>
+	</main>
 	<% include _script %>
 </body>
 </html>

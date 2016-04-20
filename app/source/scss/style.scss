@@ -6,3 +6,39 @@
 
 /* 以下にスタイルを記述
 ************************* */
+
+.canvas {
+	background: url('../images/mii-bg.jpg') no-repeat center center/cover;
+	position: fixed;
+	z-index: -10;
+}
+
+.main {
+	background-color: rgba(white, .6);
+}
+
+.mv {
+	background-color: white;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	.mv-logo {
+		position: fixed;
+		top: 30%;
+		transform: translate(-50%);
+		display: inline-block;
+	}
+	.mv-sub {
+		font-size: 60px;
+	}
+}
+
+.contents {
+	text-align: center;
+	height: 1000px;
+	.register-form {
+		input {
+			display: block;
+		}
+	}
+}
