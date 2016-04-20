@@ -7,7 +7,7 @@ var logo_h = rect.top;
 var logoMaxWidth = 600;
 var logoMinWidth = 230;
 var mv = document.getElementById('js-mv');
-var logoMinTop = 25;
+var logoMinTop = 15;
 
 // ロゴの位置・幅の変更
 function changeLogo(y) {
@@ -23,7 +23,7 @@ function changeLogo(y) {
 	if(logoWidth < logoMinWidth) {
 		logo.style.width = logoMinWidth + 'px';
 	} else {
-		logo.style.width = logoWidth + 'px';		
+		logo.style.width = logoWidth + 'px';
 	}
 }
 
@@ -32,6 +32,12 @@ function changeAlpha(y) {
 	mv.style.backgroundColor = "rgba(255,255,255,"+ (1-y) +")";
 }
 
+// フェードイン
+function fadeContents() {
+
+}
+
+// スクロールイベント
 window.addEventListener('scroll', function() {
 	var y = Math.floor(window.pageYOffset / window.innerHeight * 100)/100;
 	changeAlpha(y);
