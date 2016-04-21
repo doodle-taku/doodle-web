@@ -14,20 +14,18 @@
 }
 
 .main {
-	background-color: rgba(white, .6);
+	background-color: rgba(255,255,255, .6);
 	height: 200vh;
 }
 
 .mv {
-	position: fixed;
-	background-color: white;
 	width: 100vw;
 	height: 100vh;
-	text-align: center;
 	.mv-logo {
-		position: fixed;
 		width: 600px;
+		position: absolute;
 		top: 30%;
+		left: 50%;
 		transform: translate(-50%);
 	}
 	.mv-sub {
@@ -36,7 +34,6 @@
 }
 
 .contents {
-	position: fixed;
 	text-align: center;
 	.register-form {
 		input {
