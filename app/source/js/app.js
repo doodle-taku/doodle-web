@@ -1,13 +1,69 @@
-/* ロゴのSVGアニメーション
------------------------------- */
-// アニメを動作させる
-var animate = document.getElementById('animate');
-animate.beginElement();
-// pathそのものの形状を変化させる
-var path = document.getElementById('path');
-path.setAttribute('d','M71.15,81.128H11.257C3.751,68.486,0,54.214,0,39.733C0,26.667,3.751,13.422,11.257,0H71.15 c7.222,13.422,10.832,26.949,10.832,40.58C81.982,53.861,78.372,67.85,71.15,81.128z M41.098,79.269 C51.645,68.11,56.92,55.466,56.92,41.337c0-14.902-5.275-27.829-15.822-38.778C30.266,13.366,24.85,25.975,24.85,40.385 C24.85,55.572,30.266,68.534,41.098,79.269z');
+var paths = [
+	{
+		from: './app/source/images/**/*',
+		to: './app/public/images'
+	}, {
+		from: './app/source/fonts/**/*',
+		to: './app/public/fonts'
+	}, {
+		from: './app/source/js/**/*',
+		to: './app/public/js'
+	}, {
+		from: './app/source/plugins/**/*',
+		to: './app/public/plugins'
+	}
+];
 
-/* メインコンテンツの表示
------------------------------- */
-// $('.typeAnime').t();
 
+var paths = {
+	mark_base: {
+		from: 'M249.653,132.575c-5.624-1.788-17.369-10.077-22.494-7.151c-10.498,5.991-15.167,35.846-10.818,47.124c1.849,4.796,11.964,10.206,16.862,11.763c4.898,1.558,16.28,2.983,20.56,0.136c10.063-6.695,23.494-33.765,18.384-44.719C269.653,134.38,255.277,134.363,249.653,132.575z',
+		to: 'M115.652,0 0,0 19.449,236.11 115.652,266 211.855,236.11 231.305,0'
+	},
+	mark_D: {
+		from: '',
+		to: ''
+	},
+	mark_shadow: {
+		from: '',
+		to: ''
+	},
+	o1: {
+		from: '',
+		to: ''
+	},
+	o2: {
+		from: '',
+		to: ''
+	},
+	d: {
+		from: '',
+		to: ''
+	},
+	l: {
+		from: '',
+		to: ''
+	},
+	e: {
+		from: '',
+		to: ''
+	}
+}
+
+window.onload = function(){
+	var speed = 2000;
+
+	var svg = Snap(600,300).remove().attr({viewBox: [0, 0, 600, 300]});
+	//.path(pathString,segmentArray)：図形の描画
+	var path = svg.path(paths.mark_base.from).attr({fill: '#6da500'});
+	svg.click(function() {
+		path.stop().attr({
+			path: paths.mark_base.from,
+			fill: '#6da500'
+		}).animate({
+			path: paths.mark_base.to,
+			fill: '#6dccc6'
+		}, speed);
+	});
+	svg.prependTo(container);
+};
