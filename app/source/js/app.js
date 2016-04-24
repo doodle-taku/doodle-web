@@ -1,6 +1,5 @@
 /* ロゴアニメーション
 ************************* */
-
 var speed = 200;
 var svg = Snap(600,300).remove().attr({viewBox: [0, 0, 600, 300]});
 
@@ -18,7 +17,6 @@ Object.keys(paths).forEach(function (key) {
 	});
 });
 svg.prependTo(container);
-
 
 /* タイピングアニメーション
 ************************* */
