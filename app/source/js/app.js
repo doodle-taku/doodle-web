@@ -18,9 +18,8 @@ Object.keys(paths).forEach(function (key) {
 	}
 	setTimeout(animatePath, 1000);
 });
-svg.prependTo(logo);
+// svg.prependTo(logo);
 
 /* タイピングアニメーション
 ************************* */
 $('#js-typeAnime').t();
-	

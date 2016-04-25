@@ -33,12 +33,20 @@ main {
 	position: relative;
 	.mv,
 	.contents {
+		width: 100%;
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translateY(-50%) translateX(-50%);
-	}
 
+		.wanted {
+			font-size: 32px;
+		}
+		.wanted-jp {
+			font-size: 77px;
+			margin-top: 20px;
+		}
+	}
 }
 
 footer {
