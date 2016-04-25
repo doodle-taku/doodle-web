@@ -5,7 +5,6 @@ var svg = Snap(600,300).remove().attr({viewBox: [0, 0, 600, 300]});
 
 Object.keys(paths).forEach(function (key) {
 	var path = svg.path(paths[key].from).attr({fill: paths[key].color});
-	// svg.click(animatePath);
 	function animatePath() {
 		path.stop().attr({
 			path: paths[key].from,
@@ -18,7 +17,7 @@ Object.keys(paths).forEach(function (key) {
 	}
 	setTimeout(animatePath, 1000);
 });
-// svg.prependTo(logo);
+svg.prependTo(logo);
 
 /* タイピングアニメーション
 ************************* */
