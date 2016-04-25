@@ -6,6 +6,16 @@ body {
 	text-rendering: $text-rendering;
 	font-size: $base-font-size;
 	font-family: $base-font-family;
+	font-weight: $base-font-weight;
 	color: $base-font-color;
 	background-color: $base-background-color;
+}
+
+
+a {
+	text-decoration: underline;
+	color: $base-font-color;
+	&:hover {
+		text-decoration: none;
+	}
 }

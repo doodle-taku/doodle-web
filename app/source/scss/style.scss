@@ -7,41 +7,42 @@
 /* 以下にスタイルを記述
 ************************* */
 
-.canvas {
-	background: url('../images/mii-bg.jpg') no-repeat center center/cover;
+
+header {
+	width: 1000px;
 	position: fixed;
-	z-index: -10;
-}
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
 
-.main {
-	background-color: rgba(255,255,255, .6);
-	height: 200vh;
-}
-
-h1 {
-	text-align: center;
-}
-
-.mv {
-	width: 100vw;
-	height: 100vh;
-	.mv-logo {
-		width: 600px;
-		position: absolute;
-		top: 30%;
-		left: 50%;
-		transform: translate(-50%);
+	.home {
+		float: left;
 	}
-	.mv-sub {
-		font-size: 60px;
-	}
-}
 
-.contents {
-	text-align: center;
-	.register-form {
-		input {
-			display: block;
+	.nav {
+		float: right;
+		.nav-item {
+			display: inline-block;
 		}
 	}
+}
+
+main {
+	height: 100vh;
+	text-align: center;
+	position: relative;
+	.mv,
+	.contents {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateY(-50%) translateX(-50%);
+	}
+
+}
+
+footer {
+	height: 300px;
+	background-color: gray;
+	text-align: center;
 }

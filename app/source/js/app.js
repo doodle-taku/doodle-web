@@ -1,11 +1,12 @@
 /* ロゴアニメーション
 ************************* */
-var speed = 200;
+var speed = 400;
 var svg = Snap(600,300).remove().attr({viewBox: [0, 0, 600, 300]});
 
 Object.keys(paths).forEach(function (key) {
 	var path = svg.path(paths[key].from).attr({fill: paths[key].color});
-	svg.click(function() {
+	// svg.click(animatePath);
+	function animatePath() {
 		path.stop().attr({
 			path: paths[key].from,
 			fill: '#5782B2'
@@ -13,11 +14,13 @@ Object.keys(paths).forEach(function (key) {
 			path: paths[key].to,
 			fill: paths[key].color,
 			opacity: paths[key].opacity
-		}, speed);
-	});
+		}, speed);		
+	}
+	setTimeout(animatePath, 1000);
 });
-svg.prependTo(container);
+svg.prependTo(logo);
 
 /* タイピングアニメーション
 ************************* */
-$('.typeAnime').t();
+$('#js-typeAnime').t();
+	

@@ -6,4 +6,4 @@ function fitWindow() {
 	$('#stage').get(0).width = ww;
 	$('#stage').get(0).height = wh;
 }
-$(window).on('load resize', fitWindow);
+// $(window).on('load resize', fitWindow);
