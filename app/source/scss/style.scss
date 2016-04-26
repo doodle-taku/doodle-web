@@ -42,19 +42,23 @@ main {
 
 	.contents {
 		width: 100%;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translateY(-50%) translateX(-50%);
-		
 		display: none;
 
 		.wanted {
 			font-size: 32px;
+			margin: 160px 0 0;
 		}
 		.wanted-jp {
-			font-size: 77px;
-			margin-top: 20px;
+			font-size: 65px;
+			margin: 50px 0 0;
+		}
+
+		.text {
+			margin: 60px auto 0;
+			width: 657px;
+			text-align: justify;
+			font-size: 18px;
+			line-height: 1.5em;
 		}
 	}
 }
@@ -66,6 +70,9 @@ footer {
 }
 
 /* js */
-.js-typeAnime {
+.js-type {
 	display: none;
+	del {
+		text-decoration: none;
+	}
 }
