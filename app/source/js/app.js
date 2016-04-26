@@ -13,12 +13,20 @@ Object.keys(paths).forEach(function (key) {
 			path: paths[key].to,
 			fill: paths[key].color,
 			opacity: paths[key].opacity
-		}, speed);		
+		}, speed, function(){
+			$('#logo').fadeOut(1000,fadeContents);
+			$('#logo-bg').fadeOut(1000,fadeContents);
+		});
 	}
-	setTimeout(animatePath, 1000);
+	setTimeout(animatePath, 1500);
 });
+
 svg.prependTo(logo);
 
-/* タイピングアニメーション
+/* コンテンツ表示アニメーション
 ************************* */
-$('#js-typeAnime').t();
+function fadeContents() {
+	$('#js-contents').fadeIn(1000, function() {
+		$('.js-typeAnime').t();
+	});
+}

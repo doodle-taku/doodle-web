@@ -31,13 +31,22 @@ main {
 	height: 100vh;
 	text-align: center;
 	position: relative;
-	.mv,
+	.logo {
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateY(-50%) translateX(-50%);
+	}
+
 	.contents {
 		width: 100%;
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translateY(-50%) translateX(-50%);
+		
+		display: none;
 
 		.wanted {
 			font-size: 32px;
@@ -53,4 +62,9 @@ footer {
 	height: 300px;
 	background-color: gray;
 	text-align: center;
+}
+
+/* js */
+.js-typeAnime {
+	display: none;
 }
