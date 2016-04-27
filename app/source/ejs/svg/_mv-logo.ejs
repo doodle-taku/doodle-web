@@ -4,7 +4,7 @@
       <!-- 10の値をanimateで0に変える -->
       <feGaussianBlur id="deviation-element" in="SourceGraphic" stdDeviation="60" result="blur"/>
       <!-- 最後の70,-10をanimateで調整する -->
-      <feColorMatrix id="matrix-element" in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 10 -10" result="blob"/>
+      <feColorMatrix id="matrix-element" in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 70 -10" result="blob"/>
       <feComposite in="SourceGraphic" in2="blob" operator="atop"/>
     </filter>
   </defs>

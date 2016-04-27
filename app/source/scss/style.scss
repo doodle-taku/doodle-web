@@ -42,15 +42,16 @@ main {
 
 	.contents {
 		width: 100%;
-		display: none;
 
 		.wanted {
 			font-size: 32px;
 			margin: 160px 0 0;
+			opacity: 0;
 		}
 		.wanted-jp {
 			font-size: 65px;
 			margin: 50px 0 0;
+			display: none;
 		}
 
 		.text {
@@ -58,14 +59,13 @@ main {
 			width: 657px;
 			text-align: justify;
 			font-size: 18px;
-			line-height: 1.5em;
+			line-height: 1.6em;
+			opacity: 0;
 		}
 	}
 }
 
 footer {
-	height: 300px;
-	background-color: gray;
 	text-align: center;
 }
 
