@@ -9,7 +9,11 @@ function fadeContents() {
 	setTimeout(function(){
 		$('.js-fadein').animate({
 			opacity: 1,
-		}, 500);
+		}, 500, function(){
+			$('.js-contents-bg').animate({
+				opacity: 1,
+			}, 1000)
+		});
 	}, 6200);
 }
 fadeContents();
