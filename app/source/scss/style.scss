@@ -15,31 +15,40 @@
   font-size: 0;
   .member-list {
     display: inline-block;
+    vertical-align: middle;
     box-sizing: border-box;
     width: 25vw;
     height: 33.333vh;
-    background: no-repeat center -10% gray;
-    &.ito { background-image: url('../images/member/ito.png'); }
-    &.ikebe { background-image: url('../images/member/ikebe.png'); }
-    &.takeda { background-image: url('../images/member/takeda.png'); }
-    &.kato { background-image: url('../images/member/kato.png'); }
-    &.hara { background-image: url('../images/member/hara.png'); }
-    &.ohashi { background-image: url('../images/member/ohashi.png'); }
-    &.ueda { background-image: url('../images/member/ueda.png'); }
-    &.eguchi { background-image: url('../images/member/eguchi.png'); }
-    &.takuten { background-image: url('../images/member/takuten.png'); }
-    &.doodle { background-image: url('../images/member/doodle.png'); }
+    background: no-repeat center center gray;
+    background-image: url('../images/member/ito.png');
+    // &.matsumoto { background-image: url('../images/member/matsumoto.png'); }
+    // &.ito { background-image: url('../images/member/ito.png'); }
+    // &.ikebe { background-image: url('../images/member/ikebe.png'); }
+    // &.takeda { background-image: url('../images/member/takeda.png'); }
+    // &.kato { background-image: url('../images/member/kato.png'); }
+    // &.hara { background-image: url('../images/member/hara.png'); }
+    // &.ohashi { background-image: url('../images/member/ohashi.png'); }
+    // &.ueda { background-image: url('../images/member/ueda.png'); }
+    // &.eguchi { background-image: url('../images/member/eguchi.png'); }
+    // &.takuten { background-image: url('../images/member/takuten.png'); }
+    // &.doodle { background-image: url('../images/member/doodle.png'); }
 
     a {
       display: block;
       width: 100%;
       height: 100%;
       text-align: center;
+      font-size: 16px;
     }
 
     .member-list-name {
       font-size: 20px;
       color: white;
+    }
+    .member-list-works {
+      color: white;
+      font-size: 14px;
+      margin-top: 10px;
     }
   }
 }
