@@ -2,18 +2,9 @@
 ************************* */
 function fadeContents() {
 	var delay = 6200;
-	$('.js-type').t({
-		speed: 100,
-		caret: false
-	});
-	setTimeout(function(){
-		$('.js-fadein').animate({
-			opacity: 1,
-		}, 500, function(){
-			$('.js-contents-bg').animate({
-				opacity: 1,
-			}, 1000)
-		});
-	}, 6200);
+	$('.js-fadein').animate({
+		opacity: 1,
+	}, 500);
 }
-fadeContents();
+
+setTimeout(fadeContents);

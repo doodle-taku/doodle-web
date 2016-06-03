@@ -4,65 +4,46 @@
 @import 'base';
 @import 'clearfix';
 
-/* 以下にスタイルを記述
-************************* */
-main {
-	text-align: center;
+.main {
 
-	.contents {
-		width: 100%;
-		.js-contents-bg {
-			position: fixed;
-			z-index: -10;
-			top: 0;
-			width: 100%;
-			height: 100vh;
-			background-image: url('../images/contents-bg.png');
-			background-position: center center;
-			background-size: contain;
-			background-repeat: no-repeat;
-			opacity: 0;
-		}
-
-		.wanted-jp {
-			font-size: 65px;
-			margin: 50px 0 0;
-			display: none;
-		}
-
-		.text {
-			width: 90%;
-			margin: 60px auto 0;
-			max-width: 657px;
-			text-align: justify;
-			font-size: 18px;
-			line-height: 1.8em;
-		}
-
-		.title {
-			margin: 100px 0 0;
-			font-size: 32px;
-		}
-
-		.slide {
-			margin: 40px 0 0;
-		}
-	}
 }
 
-footer {
-	text-align: center;
-	line-height: 100px;
+
+.member {
+  width: 100vw;
+  height: 100vh;
+  font-size: 0;
+  .member-list {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 25vw;
+    height: 33.333vh;
+    background: no-repeat center -10% gray;
+    &.ito { background-image: url('../images/member/ito.png'); }
+    &.ikebe { background-image: url('../images/member/ikebe.png'); }
+    &.takeda { background-image: url('../images/member/takeda.png'); }
+    &.kato { background-image: url('../images/member/kato.png'); }
+    &.hara { background-image: url('../images/member/hara.png'); }
+    &.ohashi { background-image: url('../images/member/ohashi.png'); }
+    &.ueda { background-image: url('../images/member/ueda.png'); }
+    &.eguchi { background-image: url('../images/member/eguchi.png'); }
+    &.takuten { background-image: url('../images/member/takuten.png'); }
+    &.doodle { background-image: url('../images/member/doodle.png'); }
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+
+    .member-list-name {
+      font-size: 20px;
+      color: white;
+    }
+  }
 }
 
-/* js */
-.js-type {
-	display: none;
-	del {
-		text-decoration: none;
-	}
-}
-
-.js-fadein {
-	opacity: 0;
+.footer {
+  text-align: center;
 }
