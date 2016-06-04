@@ -7,4 +7,4 @@ function fadeContents() {
 	}, 500);
 }
 
-setTimeout(fadeContents);
+setTimeout(fadeContents, 1000);
