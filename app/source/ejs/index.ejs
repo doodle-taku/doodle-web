@@ -5,72 +5,78 @@
 </head>
 <body>
   <main class="main">
-    <ul class="member js-random">
-      <li class="member-list js-randomList matsumoto">
-        <a href="./matsumoto.html">
-          <h3 class="member-name">matsumoto</h3>
-        </a>
-      </li>
-      <li class="member-list js-randomList takeda">
-        <a href="./takeda.html">
-          <h3 class="member-name">takeda</h3>
-        </a>
-      </li>
-      <li class="member-list js-randomList ikebe">
-        <a href="./ikebe.html">
-          <h3 class="member-name">ikebe</h3>
-        </a>
-      </li>
-      <li class="member-list js-randomList ito">
-        <a href="./ito.html">
-          <h3 class="member-name">ito</h3>
-        </a>
-      </li>
-      <li class="member-list js-randomList kato">
-        <a href="./kato.html">
-          <h3 class="member-name">kato</h3>
-        </a>
-      </li>
-      <li class="member-list js-randomList ohashi">
-        <a href="./ohashi.html">
-          <h3 class="member-name">ohashi</h3>
-        </a>
-      </li>
-      <li class="member-list js-randomList hara">
-        <a href="./hara.html">
-          <h3 class="member-name">hara</h3>
-        </a>
-      </li>
-      <li class="member-list js-randomList eguchi">
-        <a href="./eguchi.html">
-          <h3 class="member-name">eguchi</h3>
-        </a>
-      </li>
-      <li class="member-list js-randomList ueda">
-        <a href="./ueda.html">
-          <h3 class="member-name">ueda</h3>
-        </a>
-      </li>
-      <li class="member-list js-randomList doodle">
+    <div class="grid">
+      <!-- Doodle -->
+      <div class="grid-item js-fadein doodle">
         <a href="./doodle.html">
           <h3 class="member-name">doodle</h3>
         </a>
-      </li>
-      <li class="member-list js-randomList takuten">
+      </div>
+        <!-- Member -->
+      <div class="member js-random">
+        <div class="grid-item member-item matsumoto js-fadein js-randomList">
+          <a href="./matsumoto.html">
+            <h3 class="member-name">matsumoto</h3>
+          </a>
+        </div>
+        <div class="grid-item member-item takeda js-fadein js-randomList">
+          <a href="./takeda.html">
+            <h3 class="member-name">takeda</h3>
+          </a>
+        </div>
+        <div class="grid-item member-item ikebe js-fadein js-randomList">
+          <a href="./ikebe.html">
+            <h3 class="member-name">ikebe</h3>
+          </a>
+        </div>
+        <div class="grid-item member-item ito js-fadein js-randomList">
+          <a href="./ito.html">
+            <h3 class="member-name">ito</h3>
+          </a>
+        </div>
+        <div class="grid-item member-item kato js-fadein js-randomList">
+          <a href="./kato.html">
+            <h3 class="member-name">kato</h3>
+          </a>
+        </div>
+        <div class="grid-item member-item ohashi js-fadein js-randomList">
+          <a href="./ohashi.html">
+            <h3 class="member-name">ohashi</h3>
+          </a>
+        </div>
+        <div class="grid-item member-item hara js-fadein js-randomList">
+          <a href="./hara.html">
+            <h3 class="member-name">hara</h3>
+          </a>
+        </div>
+        <div class="grid-item member-item eguchi js-fadein js-randomList">
+          <a href="./eguchi.html">
+            <h3 class="member-name">eguchi</h3>
+          </a>
+        </div>
+        <div class="grid-item member-item ueda js-fadein js-randomList">
+          <a href="./ueda.html">
+            <h3 class="member-name">ueda</h3>
+          </a>
+        </div>
+      </div>
+
+      <!-- about TAKUTEN -->
+      <div class="grid-item js-fadein takuten">
         <a href="./takuten.html">
           <h3 class="member-name">takuten</h3>
         </a>
-      </li>
-    </ul>
+      </div>
+
+      <!-- Footer -->
+      <div class="grid-item js-fadein footer">
+        <a href="./takuten.html">
+          <h3 class="member-name">footer的な</h3>
+          <ul>Footer的な奴</ul>
+        </a>
+      </div>
+    </div>
   </main>
-  <footer class="footer">
-    <ul>
-      <li>Doodleについて</li>
-      <li>卓展について</li>
-      <li>お問い合わせ</li>
-    </ul>
-    <p>&copy; 2016 Doodle卓.</p>
-  </footer>
   <% include _script %>
 </body>
 </html>

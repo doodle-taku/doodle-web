@@ -22,14 +22,23 @@ function shuffle(array) {
 // 元の表示をクリア（削除）
 $('.js-randomList').remove();
 
-// 順番にフェードインさせる処理
-function fadeIn (n) {
-    setTimeout(function() {
-        $('.js-randomList').eq(n).animate({ opacity: 1 }, 500);
-    }, n*50);
-}
-
+// ランダムで並び替えたものを、入れ直す
 for(var i=0; i<randomMembers.length; i++) {
     $('.js-random').append(randomMembers[i]);
-    fadeIn(i);
 }
+
+// 順番にフェードインさせる処理
+function fadeIn () {
+    for (var i=0; i<$('.js-fadein').length; i++) {
+        fade(i);
+    }
+    function fade (i) {
+        setTimeout(function() {
+            $('.js-fadein').eq(i).animate({
+                opacity: 1
+            }, 300);
+        }, i*100);
+    }
+}
+
+fadeIn();
