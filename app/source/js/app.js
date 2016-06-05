@@ -1,12 +1,3 @@
-/* コンテンツ表示アニメーション
- ************************* */
-function fadeContents() {
-    var delay = 6200;
-    $('.js-fadein').animate({
-        opacity: 1,
-    }, 500);
-}
-
 // まずは関連する配列を用意
 var members = []; // 初期表示順
 var randomMembers = []; // ランダム表示順
@@ -31,14 +22,14 @@ function shuffle(array) {
 // 元の表示をクリア（削除）
 $('.js-randomList').remove();
 
-// シャッフルされた配列をul.js-randomに追加
+// 順番にフェードインさせる処理
+function fadeIn (n) {
+    setTimeout(function() {
+        $('.js-randomList').eq(n).animate({ opacity: 1 }, 500);
+    }, n*50);
+}
+
 for(var i=0; i<randomMembers.length; i++) {
     $('.js-random').append(randomMembers[i]);
     fadeIn(i);
-}
-
-function fadeIn (n) {
-    setTimeout(function() {
-        $('.js-randomList').eq(n).animate({ opacity: 1 }, 300);
-    }, n*100);
 }
