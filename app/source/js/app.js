@@ -32,6 +32,7 @@ function fadeIn () {
     for (var i=0; i<$('.js-fadein').length; i++) {
         fade(i);
     }
+
     function fade (i) {
         setTimeout(function() {
             $('.js-fadein').eq(i).animate({
@@ -41,4 +42,7 @@ function fadeIn () {
     }
 }
 
-fadeIn();
+/* ページ遷移アニメーション */
+$('.js-page-fade').animate({
+    top: '-100vh'
+}, 1000, fadeIn);
