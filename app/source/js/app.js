@@ -34,4 +34,11 @@ $('.js-randomList').remove();
 // シャッフルされた配列をul.js-randomに追加
 for(var i=0; i<randomMembers.length; i++) {
     $('.js-random').append(randomMembers[i]);
+    fadeIn(i);
+}
+
+function fadeIn (n) {
+    setTimeout(function() {
+        $('.js-randomList').eq(n).animate({ opacity: 1 }, 300);
+    }, n*100);
 }
