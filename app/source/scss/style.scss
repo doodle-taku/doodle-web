@@ -76,3 +76,33 @@
 		}
 	}
 }
+
+.footer {
+	width: 100%;
+	background-color: #f2f2f2;
+	height: 40px;
+	border-top: 1px solid #e4e4e4;
+	position: fixed;
+	bottom: 0;
+	.footer-menu {
+		li {
+			display: inline-block;
+			font-size: 13px;
+			line-height: 40px;
+		}
+	}
+	.left-menu {
+		float: left;
+		margin-left: 20px;
+		li {
+			margin-right: 20px;
+		}
+	}
+	.right-menu {
+		float: right;
+		margin-right: 20px;
+		li {
+			margin-left: 20px;
+		}
+	}
+}
