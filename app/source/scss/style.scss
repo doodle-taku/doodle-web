@@ -3,41 +3,76 @@
 @import 'mixin';
 @import 'base';
 @import 'clearfix';
-
-
 .header {
-  height: 30px;
-  padding: 15px 0;
-  margin-right: 30px;
-  float: right;
-  div {
-    display: inline-block;
-    vertical-align: middle;
-    &.image-refer {
-      margin-left: 10px;
-    }
-    &.application {
-      margin-left: 18px;
-      img {
-        width: 16px;
-      }
-    }
-    &.notification {
-      margin-left: 23px;
-      img {
-        width: 20px;
-      }
-    }
-    &.portrait {
-      margin-left: 14px;
-      img {
-        width: 34px;
-        border-radius: 50%;
-      }
-    }
-  }
+	height: 30px;
+	padding: 15px 0;
+	margin-right: 30px;
+	nav {
+		float: right;
+	}
+	div {
+		display: inline-block;
+		vertical-align: middle;
+		&.image-refer {
+			margin-left: 10px;
+		}
+		&.application {
+			margin-left: 18px;
+			img {
+				width: 16px;
+			}
+		}
+		&.notification {
+			margin-left: 23px;
+			img {
+				width: 20px;
+			}
+		}
+		&.portrait {
+			margin-left: 14px;
+			img {
+				width: 34px;
+				border-radius: 50%;
+			}
+		}
+	}
 }
 
 .main {
-
+	.centering {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.logo {
+		display: block;
+		width: 275px;
+		margin: 150px auto 28px;
+	}
+	.form {
+		width: 580px;
+		padding: 5px 0;
+		margin: 0 auto;
+		border: 1px solid #ccc;
+		.form-item {
+			display: inline-block;
+			vertical-align: middle;
+			&.input {
+				width: 425px;
+				height: 26px;
+				border: none;
+				margin-left: 10px;
+				float: left;
+				font-size: 16px;
+				&:focus {
+					outline: 0;
+				}
+			}
+			&.icon {
+				height: 30px;
+				margin-right: 10px;
+				float: right;
+			}
+		}
+	}
 }
