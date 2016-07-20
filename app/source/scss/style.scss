@@ -74,8 +74,8 @@ main {
 		margin-top: 30px;
 	}
 	.search-type {
+		display: inline-block;
 		height: 60px;
-		border-bottom: 1px solid #ebebeb;
 		padding-left: 140px;
 		li {
 			display: inline-block;
@@ -93,6 +93,7 @@ main {
 				font-weight: bold;
 			}
 		}
+
 	}
 }
 
@@ -103,6 +104,9 @@ footer {
 	border-top: 1px solid #e4e4e4;
 	position: fixed;
 	bottom: 0;
+	&.searched {
+		position: static;
+	}
 	.footer-menu {
 		li {
 			display: inline-block;

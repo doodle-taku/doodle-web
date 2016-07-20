@@ -1,7 +1,6 @@
 .btn {
-	display: inline-block;
+	display: inline;
 	padding: 11px 15px;
-	margin: 2px;
 	border-radius: 2px;
 	font-size: 13px;
 	font-weight: bold;
@@ -12,6 +11,16 @@
 	&:hover {
 		color: #222;
 		border: 1px solid #c6c6c6;
-		box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	}
+	&.setting-btn {
+		float: right;
+		color: #444;
+		border: 1px solid #dcdcdc;
+		display: inline-block;
+		padding: 8px 30px;
+		margin-right: 20px;
+		margin-top: 15px;
 	}
 }
+
