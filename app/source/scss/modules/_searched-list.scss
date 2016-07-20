@@ -1,0 +1,30 @@
+.searched-list {
+	padding-left: 140px;
+	width: 512px;
+	.search-speed {
+		line-height: 43px;
+		color: #808080;
+		font-size: 13px;
+	}
+	article {
+		margin: 8px 0 23px;
+		h2 {
+			padding: 4px 0;
+			a {
+				color: #1a0dab;
+				font-size: 18px;
+				&:hover {
+				}
+			}
+		}
+		cite {
+			padding: 3px 0 5px;
+			display: block;
+			color: #006621;
+		}
+		p {
+			color: #545454;
+			line-height: 1.4;
+		}		
+	}
+}
