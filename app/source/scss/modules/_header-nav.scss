@@ -1,0 +1,30 @@
+.header-nav {
+	float: right;
+	margin-top: 15px;
+	div {
+		display: inline-block;
+		vertical-align: middle;
+		&.image-refer {
+			margin-left: 10px;
+		}
+		&.application {
+			margin-left: 18px;
+			img {
+				width: 16px;
+			}
+		}
+		&.notification {
+			margin-left: 23px;
+			img {
+				width: 20px;
+			}
+		}
+		&.portrait {
+			margin-left: 14px;
+			img {
+				width: 34px;
+				border-radius: 50%;
+			}
+		}
+	}
+}

@@ -5,10 +5,17 @@
 @import 'clearfix';
 @import 'modules/form';
 @import 'modules/btn';
+@import 'modules/header-nav';
 
 .siding {
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.centering {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 header {
@@ -24,55 +31,21 @@ header {
 			margin-right: 20px;
 		}
 		.header-form {
-			margin-top: 9px;
+			display: inline-block;
+			padding-top: 9px;
 		}
 		nav {
 			margin-top: 15px;
 		}
 	}
-	nav {
-		float: right;
-	}
-	div {
-		display: inline-block;
-		vertical-align: middle;
-		&.image-refer {
-			margin-left: 10px;
-		}
-		&.application {
-			margin-left: 18px;
-			img {
-				width: 16px;
-			}
-		}
-		&.notification {
-			margin-left: 23px;
-			img {
-				width: 20px;
-			}
-		}
-		&.portrait {
-			margin-left: 14px;
-			img {
-				width: 34px;
-				border-radius: 50%;
-			}
-		}
-	}
 }
 
 main {
-	.centering {
-		width: 100%;
-		margin: 0 auto;
-		text-align: center;
-	}
 	.logo {
 		display: block;
 		width: 260px;
 		margin: 130px auto 28px;
 	}
-
 	.words {
 		position: relative;
 		top: 0;
@@ -98,6 +71,27 @@ main {
 	}
 	.btn-wrapper {
 		margin-top: 30px;
+	}
+	.search-type {
+		height: 60px;
+		border-bottom: 1px solid #ebebeb;
+		padding-left: 140px;
+		li {
+			display: inline-block;
+			padding: 0 7px;
+			margin-right: 20px;
+			line-height: 57px;
+			color: #777;
+			font-size: 13px;
+			&:hover {
+				color: #222;
+			}
+			&.active {
+				color: #4285f4;
+				border-bottom: 3px solid #4285f4;
+				font-weight: bold;
+			}
+		}
 	}
 }
 
