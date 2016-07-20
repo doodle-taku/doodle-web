@@ -15,13 +15,13 @@
 	</header>
 	<main class="first-view">
 		<img class="logo" src="./images/doodle.png" alt="">
-		<div class="form clearfix">
-			<input class="form-item input" type="text" list="words">
+		<div class="form js-form clearfix">
+			<input class="form-item input" type="text" list="words" value="">
 			<img class="form-item icon" src="./images/search.png" alt="">
 		</div>
-		<div class="words">
-			<ul class="word-list">
-				<li>いけべまさあき</li>
+		<div class="words js-words" style="display: none">
+			<ul class="word-list js-word-list">
+				<li>いけべまさあき aaa</li>
 				<li>せんむ</li>
 				<li>さけるチーズ</li>
 				<li>いけべまさあき</li>
@@ -30,7 +30,7 @@
 			</ul>
 		</div>
 		<div class="centering btn-wrapper">
-			<div class="btn search-btn">Doodle 検索</div>
+			<div class="btn search-btn js-searchBtn">Doodle 検索</div>
 			<div class="btn doodle-btn">I'm Feeling Lucky</div>
 		</div>
 	</main>
@@ -47,5 +47,6 @@
 		</ul>
 	</footer>
 	<% include _script %>
+	<script src="./js/index.js"></script>
 </body>
 </html>
