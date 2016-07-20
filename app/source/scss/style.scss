@@ -3,10 +3,32 @@
 @import 'mixin';
 @import 'base';
 @import 'clearfix';
-.header {
+@import 'modules/form';
+
+.siding {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header {
 	height: 30px;
-	padding: 15px 0;
-	margin-right: 30px;
+	padding: 0 20px;
+	min-width: 900px;
+	&.searched {
+		background-color: #f1f1f1;
+		border-bottom: 1px solid #e5e5e5;
+		height: 60px;
+		display: block;
+		.header-logo {
+			margin-right: 20px;
+		}
+		.header-form {
+			margin-top: 9px;
+		}
+		nav {
+			margin-top: 15px;
+		}
+	}
 	nav {
 		float: right;
 	}
@@ -38,7 +60,7 @@
 	}
 }
 
-.main {
+main {
 	.centering {
 		width: 100%;
 		margin: 0 auto;
@@ -49,49 +71,27 @@
 		width: 260px;
 		margin: 130px auto 28px;
 	}
-	.form {
-		width: 580px;
-		padding: 5px 0;
-		margin: 0 auto;
-		border: 1px solid #d9d9d9;
-		.form-item {
-			display: inline-block;
-			vertical-align: middle;
-			&.input {
-				width: 520px;
-				height: 26px;
-				border: none;
-				margin-left: 10px;
-				float: left;
-				font-size: 16px;
-				&:focus {
-					outline: 0;
-				}
-			}
-			&.icon {
-				height: 20px;
-				margin-right: 10px;
-				margin-top: 4px;
-				float: right;
-			}
-		}
-		&:hover {
-			border: 1px solid #b9b9b9;
-			border-top-color: #a0a0a0;
-		}
-	}
+
 	.words {
-		width: 580px;
-		margin: 0 auto;
-		border: 1px solid #ccc;
-		border-top: none;
-		max-height: 135px;
-		overflow: scroll;
-		li {
-			padding: 7px 10px;
-			font-size: 16px;
-			&:hover {
-				background-color: orange;
+		position: relative;
+		top: 0;
+		left: 50%;
+		transform: translateX(-291px);
+		.word-list {
+			background-color: #fff;
+			width: 580px;
+			border: 1px solid #ccc;
+			border-top: none;
+			max-height: 135px;
+			overflow: scroll;
+			position: absolute;
+			top: 0;
+			li {
+				padding: 7px 10px;
+				font-size: 16px;
+				&:hover {
+					background-color: orange;
+				}
 			}
 		}
 	}
@@ -117,7 +117,7 @@
 	}
 }
 
-.footer {
+footer {
 	width: 100%;
 	background-color: #f2f2f2;
 	height: 40px;
