@@ -4,6 +4,7 @@
 @import 'base';
 @import 'clearfix';
 @import 'modules/form';
+@import 'modules/btn';
 
 .siding {
 	display: inline-block;
@@ -97,23 +98,6 @@ main {
 	}
 	.btn-wrapper {
 		margin-top: 30px;
-	}
-	.btn {
-		display: inline-block;
-		padding: 11px 15px;
-		margin: 2px;
-		border-radius: 2px;
-		font-size: 13px;
-		font-weight: bold;
-		background-color: #f2f2f2;
-		color: #757575;
-		border: 1px solid transparent;
-		cursor: default;
-		&:hover {
-			color: #222;
-			border: 1px solid #c6c6c6;
-			box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-		}
 	}
 }
 
