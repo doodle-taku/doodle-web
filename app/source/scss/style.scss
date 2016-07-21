@@ -7,6 +7,7 @@
 @import 'modules/btn';
 @import 'modules/header-nav';
 @import 'modules/searched-list';
+@import 'modules/search-words';
 
 .siding {
 	display: inline-block;
@@ -47,29 +48,7 @@ main {
 		width: 260px;
 		margin: 130px auto 28px;
 	}
-	.words {
-		position: relative;
-		top: 0;
-		left: 50%;
-		transform: translateX(-291px);
-		.word-list {
-			background-color: #fff;
-			width: 580px;
-			border: 1px solid #ccc;
-			border-top: none;
-			max-height: 135px;
-			overflow: scroll;
-			position: absolute;
-			top: 0;
-			li {
-				padding: 7px 10px;
-				font-size: 16px;
-				&:hover {
-					background-color: orange;
-				}
-			}
-		}
-	}
+
 	.btn-wrapper {
 		margin-top: 30px;
 	}
