@@ -27,7 +27,6 @@ $(window).on('click', function(e) {
 		$('.js-words').hide();
 		$('.js-form').css('border-color', '#d9d9d9');
 	}
-
 });
 
 // パラメータをもたせてページ遷移

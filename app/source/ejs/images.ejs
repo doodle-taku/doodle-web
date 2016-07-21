@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+	<% include _head %>
+</head>
+<body>
+	<header class="searched clearfix">
+		<div class="header-form">
+			<a href="/"><img class="siding header-logo" src="./images/header/doodle-searched.png" alt="" class="logo"></a>
+			<div class="form siding js-form clearfix">
+				<input class="form-item input js-input" type="text" list="words">
+				<img class="form-item icon" src="./images/search.png" alt="">
+			</div>
+			<% include _search-words %>
+		</div>
+		<nav class="header-nav">
+			<div class="application"><a href=""><img src="./images/header/menu.png" alt=""></a></div>
+			<div class="notification"><a href=""><img src="./images/header/bell.png" alt=""></a></div>
+			<div class="portrait"><a href=""><img src="./images/header/rider.jpg" alt=""></a></div>
+		</nav>
+	</header>
+	<main>
+		<div>
+			<ul class="search-type">
+				<li class="active">すべて</li>
+				<li>画像</li>
+				<li>動画</li>
+				<li>地図</li>
+				<li>ニュース</li>
+			</ul>
+			<div class="btn setting-btn">※</div>
+		</div>
+		<ul class="photos">
+			<li><img src="./images/photos/1.png" alt=""></li>
+			<li><img src="./images/photos/1.png" alt=""></li>
+			<li><img src="./images/photos/1.png" alt=""></li>
+			<li><img src="./images/photos/1.png" alt=""></li>
+			<li><img src="./images/photos/1.png" alt=""></li>
+			<li><img src="./images/photos/1.png" alt=""></li>
+			<li><img src="./images/photos/1.png" alt=""></li>
+			<li><img src="./images/photos/1.png" alt=""></li>
+			<li><img src="./images/photos/1.png" alt=""></li>
+			<li><img src="./images/photos/1.png" alt=""></li>
+			<li><img src="./images/photos/1.png" alt=""></li>
+		</ul>
+	</main>
+	<footer class="footer searched clearfix">
+		<span class="location">愛知県名古屋市千種区北千種2-1-10</span>
+		<ul>
+			<li><a href="">ヘルプ</a></li>
+			<li><a href="">フィードバックを送信</a></li>
+			<li><a href="">プライバシー</a></li>
+			<li><a href="">規約</a></li>
+		</ul>
+	</footer>
+	<% include _script %>
+	<script src="./js/s.js"></script>
+</body>
+</html>

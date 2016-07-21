@@ -74,6 +74,18 @@ main {
 			}
 		}
 	}
+
+	.photos {
+		padding: 20px;
+		background-color: #f1f1f1;
+		li {
+			display: inline-block;
+			height: 200px;
+			img {
+				background-color: #fff;
+			}
+		}
+	}
 }
 
 footer {
