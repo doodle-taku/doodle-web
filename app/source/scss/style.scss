@@ -20,6 +20,10 @@
 	text-align: center;
 }
 
+body {
+	min-width: 900px;
+}
+
 header {
 	height: 30px;
 	padding: 0 20px;
@@ -61,22 +65,26 @@ main {
 			display: inline-block;
 			padding: 0 7px;
 			margin-right: 20px;
-			line-height: 57px;
-			color: #777;
-			font-size: 13px;
-			&:hover {
-				color: #222;
-			}
 			&.active {
 				color: #4285f4;
 				border-bottom: 3px solid #4285f4;
 				font-weight: bold;
 			}
+			a {
+				display: inline-block;
+				color: #777;
+				padding: 22px 0;
+				font-size: 13px;
+				&:hover {
+					color: #222;
+					text-decoration: none;
+				}
+			}
 		}
 	}
 
 	.photos {
-		padding: 20px;
+		padding: 8px;
 		background-color: #f1f1f1;
 		li {
 			display: inline-block;
@@ -117,7 +125,6 @@ footer {
 			}
 		}
 		ul {
-			
 			li {
 				display: inline-block;
 				margin-right: 30px;
