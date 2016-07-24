@@ -25,3 +25,4 @@ if(window.sessionStorage) { // ウェブストレージに対応している
 		}
 	});
 }
+$('.js-article-list').css('opacity', '1');

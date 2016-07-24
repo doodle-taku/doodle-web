@@ -2,11 +2,13 @@
 	padding-left: 140px;
 	padding-bottom: 30px;
 	border-top: 1px solid #ebebeb;
-
 	.search-speed {
 		line-height: 43px;
 		color: #808080;
 		font-size: 13px;
+	}
+	.artcile-list {
+		opacity: 0;	
 	}
 	article {
 		width: 512px;
