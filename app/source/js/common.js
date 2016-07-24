@@ -24,6 +24,11 @@ $(window).on('click', function(e) {
 		selection = target.context.innerHTML;
 		$('.js-input').val(selection);
 		$('.js-words').hide();
+		parameter = selection;
+		window.location.href = './s.html?p=' + parameter;
+
+		// SessionStrageにdata-wordを一時保存
+		window.sessionStorage.setItem('word' , d_word);
 	}  else { // 候補ワードリスト以外を触った時
 		$('.js-words').hide();
 		$('.js-form').css('border-color', '#d9d9d9');
@@ -32,9 +37,5 @@ $(window).on('click', function(e) {
 
 // パラメータをもたせてページ遷移
 $('.js-searchBtn').on('click', function() {
-	parameter = selection;
-	window.location.href = './s.html?p=' + parameter;
 
-	// SessionStrageにdata-wordを一時保存
-	window.sessionStorage.setItem('word' , d_word);
 });
