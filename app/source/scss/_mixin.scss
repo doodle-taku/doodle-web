@@ -1,0 +1,21 @@
+$sp: 414px;
+$tab: 1024px;
+$pc: 1025px;
+
+@mixin media($media-width) {
+	@if $media-width == sp {
+		@media only screen and (max-width: $sp) {
+			@content;
+		}
+	}
+	@else if $media-width == tb {
+		@media only screen and (max-width: $tab) {
+			@content;
+		}
+	}
+	@else if $media-width == pc {
+		@media only screen and (min-width: $pc) {
+			@content;
+		}
+	}
+}
