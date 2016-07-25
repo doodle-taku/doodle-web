@@ -1,6 +1,5 @@
 // common.js
 
-var selection = ' '; // 選択中の検索ワード
 var parameter = ''; // ページ遷移時のパラメータ
 var d_word = '';
 
@@ -21,10 +20,9 @@ $(window).on('click', function(e) {
 		$('.js-words').show();
 	} else if (target.offsetParent().hasClass('js-word-list')) {
 		d_word = target.context.dataset.word;
-		selection = target.context.innerHTML;
-		$('.js-input').val(selection);
+		parameter = target.context.innerHTML;
+		$('.js-input').val(parameter);
 		$('.js-words').hide();
-		parameter = selection;
 		window.location.href = './s.html?p=' + parameter;
 
 		// SessionStrageにdata-wordを一時保存
@@ -35,7 +33,6 @@ $(window).on('click', function(e) {
 	}
 });
 
-// パラメータをもたせてページ遷移
 $('.js-searchBtn').on('click', function() {
-
-});
+	window.location.href = './s.html?p=' + parameter;
+})
