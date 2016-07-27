@@ -34,6 +34,12 @@ header {
 	padding: 0 20px;
 	min-width: 900px;
 	box-sizing: border-box;
+	&.index {
+		.header-nav {
+			float: right;
+			margin-top: 10px;
+		}
+	}
 	&.searched {
 		background-color: #f1f1f1;
 		border-bottom: 1px solid #e5e5e5;
@@ -48,9 +54,6 @@ header {
 			.header-logo {
 				margin-right: 20px;
 			}
-		}
-		nav {
-			margin-top: 15px;
 		}
 	}
 }
