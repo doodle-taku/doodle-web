@@ -1,9 +1,10 @@
 .words {
 	position: absolute;
-	width: 100%;
+	display: block;
 	.word-list {
+		display: block;
+		width: 100%;
 		background-color: #fff;
-		width: 580px;
 		padding: 3px 0;
 		border: 1px solid #ccc;
 		border-top: none;

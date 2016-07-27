@@ -28,4 +28,7 @@
 		border: 1px solid #b9b9b9;
 		border-top-color: #a0a0a0;
 	}
+	@include media(sp) {
+		width: 100%;
+	}
 }
