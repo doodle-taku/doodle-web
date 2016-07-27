@@ -21,6 +21,9 @@
 		padding: 8px 30px;
 		margin-right: 20px;
 		margin-top: 15px;
+		@include media(sp) {
+			display: none;
+		}
 	}
 }
 

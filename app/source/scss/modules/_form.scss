@@ -33,6 +33,7 @@
 	}
 
 	@include media(sp) {
+		display: block;
 		width: 94%;
 	}
 }

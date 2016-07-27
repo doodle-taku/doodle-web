@@ -23,6 +23,7 @@
 body {
 	width: 100%;
 	min-width: 900px;
+	background-color: #f1f1f1;
 	@include media(sp) {
 		min-width: 320px;
 	}
@@ -38,12 +39,20 @@ header {
 		border-bottom: 1px solid #e5e5e5;
 		height: 60px;
 		display: block;
-		.header-logo {
-			margin-right: 20px;
-		}
 		.header-form {
 			display: inline-block;
 			padding-top: 9px;
+			.header-logo {
+				margin-right: 20px;
+				@include media(sp) {
+					display: block;
+					margin: 0 auto;
+				}
+			}
+			@include media(sp) {
+				display: block;
+				width: 100%;
+			}
 		}
 		nav {
 			margin-top: 15px;
@@ -52,10 +61,12 @@ header {
 	@include media(sp) {
 		width: 100%;
 		min-width: 1px;
+		padding: 0;
 	}
 }
 
 main {
+	background-color: #fff;
 	.logo {
 		display: block;
 		width: 260px;
@@ -97,6 +108,11 @@ main {
 				}
 			}
 		}
+		@include media(sp) {
+			padding: 0;
+			width: 94%;
+			overflow-x: scroll;
+		}
 	}
 
 	.photos {
@@ -109,6 +125,9 @@ main {
 				background-color: #fff;
 			}
 		}
+	}
+	@include media(sp) {
+		background-color: transparent;
 	}
 }
 
