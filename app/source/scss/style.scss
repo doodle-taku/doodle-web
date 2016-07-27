@@ -29,9 +29,9 @@ html {
 
 body {
 	width: 100%;
-	height: 100vh;
+	// height: 100vh;
 	min-width: 900px;
-	min-height: 600px;
+	min-height: 100vh;
 	@include media(tb) {
 		min-width: 1px;
 		min-height: 1px;
@@ -91,7 +91,6 @@ header {
 			border: 0;
 		}
 	}
-
 }
 
 main {
@@ -127,67 +126,100 @@ main {
 			padding: 0 10px;
 			background-color: #f1f1f1;
 		}
-	}
-	.search-type {
-		display: inline-block;
-		padding-left: 126px;
-		margin-left: 1px;
-		li {
+		.search-type {
 			display: inline-block;
-			padding: 0 14px;
-			&.active {
-				border-bottom: 3px solid #4285f4;
-				font-weight: bold;
-				a {
+			padding-left: 126px;
+			margin-left: 1px;
+			li {
+				display: inline-block;
+				padding: 0 14px;
+				&.active {
+					border-bottom: 3px solid #4285f4;
+					font-weight: bold;
+					a {
+						@include media(tb) {
+							color: #4285F4;
+						}
+					}
 					@include media(tb) {
-						color: #4285F4;
+						border-bottom-width: 2px;
 					}
 				}
-				@include media(tb) {
-					border-bottom-width: 2px;
+				a {
+					display: inline-block;
+					color: #777;
+					padding: 22px 0;
+					font-size: 13px;
+					&:hover {
+						color: #222;
+						text-decoration: none;
+					}
+					@include media(tb) {
+						font-size: 12px;
+						padding: 12px 0;
+					}
 				}
-			}
-			a {
-				display: inline-block;
-				color: #777;
-				padding: 22px 0;
-				font-size: 13px;
-				&:hover {
-					color: #222;
-					text-decoration: none;
-				}
-				@include media(tb) {
-					font-size: 12px;
-					padding: 12px 0;
-				}
-			}
-		}
-		@include media(tb) {
-			width: 100%;
-			background-color: #f8f8f8;
-			box-sizing: border-box;
-			padding-left: 0;
-			box-shadow: 0 1px 2px rgba(0,0,0,.2);
-			border-radius: 0 0 2px 2px;
-		}
-	}
-
-	.photos {
-		padding: 8px;
-		background-color: #f1f1f1;
-		li {
-			display: inline-block;
-			height: 200px;
-			img {
-				background-color: #fff;
 			}
 			@include media(tb) {
-				margin: 1px !important;
+				width: 100%;
+				background-color: #f8f8f8;
+				box-sizing: border-box;
+				padding-left: 0;
+				box-shadow: 0 1px 2px rgba(0,0,0,.2);
+				border-radius: 0 0 2px 2px;
 			}
 		}
-		@include media(tb) {
-			padding: 10px 0 10px 2px;
-			margin: -4px;
+		.photos {
+			padding: 8px;
+			background-color: #f1f1f1;
+			li {
+				display: inline-block;
+				height: 200px;
+				img {
+					background-color: #fff;
+				}
+				@include media(tb) {
+					margin: 1px !important;
+				}
+			}
+			@include media(tb) {
+				padding: 10px 0 10px 2px;
+				margin: -4px;
+			}
+		}
+	}
+	&.kid {
+		.mv {
+			width: 100%;
+			height: 300px;
+			background: center center/cover no-repeat #eee;
+			&.page { background-image: url('./images/page/mv.png'); }
+			&.doodle { background-image: url('./images/doodle/mv.png'); }
+			&.ad { background-image: url('./images/ad/mv.png'); }
+			&.member { background-image: url('./images/member/mv.png'); }
+		}
+		.content {
+			width: 900px;
+			margin: 0 auto;
+			h2 {
+				font-size: 24px;
+				font-weight: bold;
+				margin-top: 36px;
+			}
+			p {
+				font-size: 15px;
+				line-height: 1.6em;
+				text-align: justify;
+				margin-top: 12px;
+			}
+			a {
+				color: #009cdc;
+				font-size: 15px;
+				&:hover {
+					color: #1465ff;
+					text-decoration: none;
+				}
+			}
 		}
 	}
 }
