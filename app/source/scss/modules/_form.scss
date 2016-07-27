@@ -1,27 +1,27 @@
 .form {
+	display: block;
 	width: 580px;
-	margin: 0 auto;
 	border: 1px solid #d9d9d9;
 	background-color: #fff;
+	font-size: 0;
 	.form-item {
 		display: inline-block;
 		vertical-align: middle;
 		&.input {
-			padding: 5px 0 5px 10px;
-			width: 530px;
-			height: 26px;
-			border: none;
-			float: left;
 			font-size: 16px;
+			width: calc( 100% - 50px );
+			height: 26px;
+			padding: 5px 0 5px 10px;
+			margin-right: 10px;
+			border: none;
 			&:focus {
 				outline: 0;
 			}
 		}
 		&.icon {
-			height: 20px;
+			max-width: 20px;
+			max-height: 20px;
 			margin-right: 10px;
-			margin-top: 8px;
-			float: right;
 		}
 	}
 	&:hover {
