@@ -1,29 +1,24 @@
 .header-nav {
-	float: right;
-	margin-top: 15px;
-	padding-right: 20px;
+	height: 34px; // これ基準になる
 	div {
 		display: inline-block;
 		vertical-align: middle;
-		&.image-refer {
-			margin-left: 10px;
+		& + div {
+			margin-left: 15px;
+		}
+		img {
+			width: auto;
+			height: 100%;
 		}
 		&.application {
-			margin-left: 18px;
-			img {
-				width: 16px;
-			}
+			height: 49%;
 		}
 		&.notification {
-			margin-left: 23px;
-			img {
-				width: 20px;
-			}
+			height: 57%;
 		}
 		&.portrait {
-			margin-left: 14px;
+			height: 100%;
 			img {
-				width: 34px;
 				border-radius: 50%;
 			}
 		}
