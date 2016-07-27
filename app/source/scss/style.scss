@@ -20,12 +20,21 @@
 	text-align: center;
 }
 
+html {
+	background-color: #fff;
+	@include media(tb) {
+		background-color: #f1f1f1;
+	}
+}
+
 body {
 	width: 100%;
+	height: 100vh;
 	min-width: 900px;
 	min-height: 600px;
-	@include media(sp) {
+	@include media(tb) {
 		min-width: 1px;
+		min-height: 1px;
 	}
 }
 
@@ -38,7 +47,7 @@ header {
 			margin-top: 12px;
 			margin-right: 24px;
 		}
-		@include media(sp) {
+		@include media(tb) {
 			width: 100%;
 			min-width: 1px;
 		}
@@ -52,7 +61,7 @@ header {
 			display: inline-block;
 			margin-left: 12px;
 			vertical-align: middle;
-			@include media(sp) {
+			@include media(tb) {
 				display: block;
 				text-align: center;
 				padding: 20px 0 15px;
@@ -63,7 +72,7 @@ header {
 			display: inline-block;
 			margin-left: 16px;
 			vertical-align: middle;
-			@include media(sp) {
+			@include media(tb) {
 				margin: 0;
 				width: 100%;
 			}
@@ -71,11 +80,11 @@ header {
 		.header-nav {
 			float: right;
 			margin-top: 4px;
-			@include media(sp) {
+			@include media(tb) {
 				display: none;
 			}
 		}
-		@include media(sp) {
+		@include media(tb) {
 			width: 100%;
 			box-sizing: border-box;
 			padding: 0 10px;
@@ -87,7 +96,7 @@ header {
 
 main {
 	background-color: #fff;
-	@include media(sp) {
+	@include media(tb) {
 		padding: 0 10px;
 	}
 	&.index {
@@ -95,22 +104,26 @@ main {
 			display: block;
 			width: 255px;
 			margin: 0 auto;
-			padding: 150px 0 25px;
+			padding: 150px 0 30px;
+			@include media(tb) {
+				padding-top: 120px;
+				width: 35%;
+			}
 			@include media(sp) {
 				padding-top: 80px;
-				width: 165px;
+				width: 42%;
 			}
 		}
 
 		.btn-wrapper {
 			margin-top: 50px;
-			@include media(sp) {
+			@include media(tb) {
 				display: none;
 			}
 		}
 	}
 	&.searched {
-		@include media(sp) {
+		@include media(tb) {
 			padding: 0 10px;
 			background-color: #f1f1f1;
 		}
@@ -126,11 +139,11 @@ main {
 				border-bottom: 3px solid #4285f4;
 				font-weight: bold;
 				a {
-					@include media(sp) {
+					@include media(tb) {
 						color: #4285F4;
 					}
 				}
-				@include media(sp) {
+				@include media(tb) {
 					border-bottom-width: 2px;
 				}
 			}
@@ -143,13 +156,13 @@ main {
 					color: #222;
 					text-decoration: none;
 				}
-				@include media(sp) {
+				@include media(tb) {
 					font-size: 12px;
 					padding: 12px 0;
 				}
 			}
 		}
-		@include media(sp) {
+		@include media(tb) {
 			width: 100%;
 			background-color: #f8f8f8;
 			box-sizing: border-box;
@@ -168,6 +181,13 @@ main {
 			img {
 				background-color: #fff;
 			}
+			@include media(tb) {
+				margin: 1px !important;
+			}
+		}
+		@include media(tb) {
+			padding: 10px 0 10px 2px;
+			margin: -4px;
 		}
 	}
 }
@@ -175,7 +195,7 @@ main {
 footer {
 	box-sizing: border-box;
 	width: 100%;
-	padding: 10px 20px;
+	padding: 3px 20px;
 	background-color: #f2f2f2;	
 	border-top: 1px solid #e4e4e4;
 	position: fixed;
@@ -223,6 +243,10 @@ footer {
 				background-color: #aaa;
 				border-radius: 50%;
 			}
+			@include media(tb) {
+				text-align: center;
+				margin-top: 28px;
+			}
 		}
 		ul {
 			li {
@@ -236,6 +260,13 @@ footer {
 					}
 				}
 			}
+			@include media(tb) {
+				text-align: center;
+				line-height: 30px;
+			}
+		}
+		@include media(tb) {
+			padding: 0 10px;
 		}
 	}
 }

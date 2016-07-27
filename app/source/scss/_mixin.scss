@@ -1,6 +1,6 @@
 $sp: 414px;
-$tab: 1024px;
-$pc: 1025px;
+$tab: 900px;
+$pc: 901px;
 
 @mixin media($media-width) {
 	@if $media-width == sp {

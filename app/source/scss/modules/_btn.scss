@@ -13,6 +13,14 @@
 		border: 1px solid #c6c6c6;
 		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	}
+	a {
+		text-decoration: none;
+		color: #757575;
+		&:hover {
+			text-decoration: none;
+			color: #222;
+		}
+	}
 	&.setting-btn {
 		float: right;
 		color: #444;
@@ -21,7 +29,7 @@
 		padding: 8px 30px;
 		margin-right: 20px;
 		margin-top: 15px;
-		@include media(sp) {
+		@include media(tb) {
 			display: none;
 		}
 	}
