@@ -16,9 +16,6 @@
 			&:focus {
 				outline: 0;
 			}
-			@include media(sp) {
-				width: calc( 100% - 40px );
-			}
 		}
 		&.icon {
 			height: 20px;
@@ -30,10 +27,5 @@
 	&:hover {
 		border: 1px solid #b9b9b9;
 		border-top-color: #a0a0a0;
-	}
-
-	@include media(sp) {
-		display: block;
-		width: 94%;
 	}
 }

@@ -1,3 +1,7 @@
+#__bs_notify__ {
+	display: none;
+	opacity: 0;
+}
 @import 'setting';
 @import 'reset';
 @import 'mixin';
@@ -23,10 +27,6 @@
 body {
 	width: 100%;
 	min-width: 900px;
-	background-color: #f1f1f1;
-	@include media(sp) {
-		min-width: 320px;
-	}
 }
 
 header {
@@ -42,26 +42,16 @@ header {
 		.header-form {
 			display: inline-block;
 			padding-top: 9px;
+			a {
+				display: block;
+			}
 			.header-logo {
 				margin-right: 20px;
-				@include media(sp) {
-					display: block;
-					margin: 0 auto;
-				}
-			}
-			@include media(sp) {
-				display: block;
-				width: 100%;
 			}
 		}
 		nav {
 			margin-top: 15px;
 		}
-	}
-	@include media(sp) {
-		width: 100%;
-		min-width: 1px;
-		padding: 0;
 	}
 }
 
@@ -71,17 +61,10 @@ main {
 		display: block;
 		width: 260px;
 		margin: 130px auto 28px;
-		@include media(sp) {
-			width: 40%;
-			margin-top: 100px;
-		}
 	}
 
 	.btn-wrapper {
 		margin-top: 30px;
-		@include media(sp) {
-			display: none;
-		}
 	}
 
 	.search-type {
@@ -108,11 +91,6 @@ main {
 				}
 			}
 		}
-		@include media(sp) {
-			padding: 0;
-			width: 94%;
-			overflow-x: scroll;
-		}
 	}
 
 	.photos {
@@ -126,9 +104,6 @@ main {
 			}
 		}
 	}
-	@include media(sp) {
-		background-color: transparent;
-	}
 }
 
 footer {
@@ -140,9 +115,6 @@ footer {
 	bottom: 0;
 	padding: 0 20px;
 	box-sizing: border-box;
-	@include media(sp) {
-		height: 80px;
-	}
 	&.searched {
 		position: static;
 		padding: 30px 0 20px 140px;
@@ -187,24 +159,15 @@ footer {
 				line-height: 40px;
 			}
 		}
-		@include media(sp) {
-			float: none;
-			width: 100%;
-			text-align: center;
-			display: block;
-			margin: 0;
-		}
 	}
 	.left-menu {
 		float: left;
-		// margin-left: 30px;
 		li+li {
 			margin-left: 25px;
 		}
 	}
 	.right-menu {
 		float: right;
-		// margin-right: 30px;
 		li+li {
 			margin-left: 25px;
 		}
