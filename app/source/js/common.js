@@ -9,8 +9,10 @@ $('.js-input').on('click', function() {
 	$('.js-words').css({
 		top: $('.js-form').offset().top + $('.js-form').outerHeight(),
 		left: $('.js-form').offset().left,
+		width: $('.js-form').width(),
 		display: 'block'
 	});
+	console.log();
 });
 
 // WordListからwordを選択
