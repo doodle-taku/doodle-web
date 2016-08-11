@@ -37,4 +37,16 @@ $(window).on('click', function(e) {
 
 $('.js-searchBtn').on('click', function() {
 	window.location.href = './s.html?p=' + parameter;
-})
+});
+
+
+// navigation(アプリケーション選択window)
+$('.js-nav').on('click', function(){
+	if($(this).hasClass('js-nav-open')) {
+		$(this).removeClass('js-nav-open');
+		$('.js-nav-application').hide();
+	} else {
+		$(this).addClass('js-nav-open');
+		$('.js-nav-application').show();
+	}
+});
