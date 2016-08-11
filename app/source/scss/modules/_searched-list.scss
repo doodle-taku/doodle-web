@@ -13,7 +13,7 @@
 	.artcile-list {
 		opacity: 0;
 	}
-	article {
+	.article {
 		width: 512px;
 		margin: 8px 0 23px;
 		h2 {
@@ -49,6 +49,26 @@
 					margin-right: 5px;
 					font-size: 13px;
 					color: #555;
+				}
+			}
+		}
+		&.image-search {
+			ul {
+				font-size: 0;
+				width: 512px;
+				overflow: hidden;
+				white-space: nowrap;
+				li {
+					height: 105px;
+					display: inline-block;
+					vertical-align: top;
+					white-space: normal;
+					+li {
+						margin-left: 3px;
+					}
+					img {
+						height: 100%;
+					}
 				}
 			}
 		}
