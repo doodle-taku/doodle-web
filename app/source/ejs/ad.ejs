@@ -6,60 +6,40 @@
 <body>
 	<header class="searched clearfix">	
 		<a class="header-logo" href="/"><img src="./images/header/doodle-searched.png"></a>
-		<div class="header-form">
-			<div class="form js-form">
-				<input class="form-item input js-input" type="text" list="words">
-				<img class="form-item icon" src="./images/search.png" alt="">
-			</div>
-			<% include _search-words %>
-		</div>
 		<nav class="header-nav">
 			<div class="application"><a href=""><img src="./images/header/menu.png" alt=""></a></div>
 			<div class="notification"><a href=""><img src="./images/header/bell.png" alt=""></a></div>
 			<div class="portrait"><a href=""><img src="./images/header/rider.jpg" alt=""></a></div>
 		</nav>
 	</header>
-	<main class="searched">
-		<div>
-			<ul class="search-type">
-				<li><a href="./s.html">すべて</a></li>
-				<li class="active"><a href=" ./images.html">画像</a></li>
-				<li><a href="">地図</a></li>
-				<li><a href="">ニュース</a></li>
-			</ul>
-			<div class="btn setting-btn">※</div>
-		</div>
-		<ul class="photos js-width-fit flex-images">
-			<li class="item" data-w="285" data-h="234"><img src="./images/photos/1.png"></li>
-			<li class="item" data-w="477" data-h="308"><img src="./images/photos/2.png"></li>
-			<li class="item" data-w="297" data-h="198"><img src="./images/photos/3.png"></li>
-			<li class="item" data-w="327" data-h="218"><img src="./images/photos/4.png"></li>
-			<li class="item" data-w="319" data-h="180"><img src="./images/photos/7.png"></li>
-			<li class="item" data-w="497" data-h="324"><img src="./images/photos/6.png"></li>
-			<li class="item" data-w="319" data-h="180"><img src="./images/photos/7.png"></li>
-			<li class="item" data-w="285" data-h="234"><img src="./images/photos/1.png"></li>
-			<li class="item" data-w="477" data-h="308"><img src="./images/photos/2.png"></li>
-			<li class="item" data-w="297" data-h="198"><img src="./images/photos/3.png"></li>
-			<li class="item" data-w="301" data-h="370"><img src="./images/photos/3.png"></li>
-			<li class="item" data-w="497" data-h="324"><img src="./images/photos/6.png"></li>
-			<li class="item" data-w="319" data-h="180"><img src="./images/photos/7.png"></li>
-			<li class="item" data-w="497" data-h="324"><img src="./images/photos/6.png"></li>
-			<li class="item" data-w="319" data-h="180"><img src="./images/photos/7.png"></li>
-			<li class="item" data-w="285" data-h="234"><img src="./images/photos/1.png"></li>
-			<li class="item" data-w="477" data-h="308"><img src="./images/photos/2.png"></li>
-			<li class="item" data-w="297" data-h="198"><img src="./images/photos/3.png"></li>
-			<li class="item" data-w="327" data-h="218"><img src="./images/photos/4.png"></li>
-			<li class="item" data-w="301" data-h="370"><img src="./images/photos/5.png"></li>
-			<li class="item" data-w="497" data-h="324"><img src="./images/photos/6.png"></li>
-			<li class="item" data-w="319" data-h="180"><img src="./images/photos/7.png"></li>
-		</ul>
+	<main class="kid ad">
+		<div class="mv"></div>
+		<section class="content">
+			<h2>広告</h2>
+			<p>Doodle卓に関わる何かのリンクを掲載しています。併せてご覧ください。</p>
+
+			<h3>芸工祭2016</h3>
+			<a href="http://geikousai-ncu.com" target="_blank">http://geikousai-ncu.com</a>
+			<p>
+				名古屋市立大学芸術工学部の学祭「芸工祭」のWebサイトです。2016年度は、10月29日-30日に開催されます。今年のテーマは「HOLIC」です。
+			</p>
+			<blockquote>
+				HOLICとは、接尾語で、意味は、〜中毒です。alco-holic（アルコール中毒）のように単語の後につけることで意味をなします。中毒とはつまり熱中できたり、夢中になれるということ。この芸工祭に来ていただいた皆様に何かに熱狂的に楽しんでいただいたり、夢中になれるような、そんな芸工祭にしたい！という思いからこのテーマに決めました。この芸工祭自体が、皆様の接尾語になれたら幸いです！
+				<a href="http://geikousai-ncu.com/" target="_blank">http://geikousai-ncu.com/</a>
+			</blockquote>
+			<p>みなさまお誘いの上、ぜひお越しください！</p>
+
+			<h3>ライダーのポートフォリオサイト</h3>
+			<a href="http://mtmtkzm.com" target="_blank">http://mtmtkzm.com</a>
+			<p>Doodleの卓長ライダーのポートフォリオサイトです。</p>
+			<p>Web系の学生団体UNITEDとOthloTechで活動したり、Web制作会社LIGでアルバイトもしています。</p>
+	
+			<h3>卒業・修了制作展</h3>
+			<a href="http://www.sda.nagoya-cu.ac.jp/katsudou/sotsuten/2016/">http://www.sda.nagoya-cu.ac.jp/katsudou/sotsuten/2016/</a>（※）※これは2015年度のWebサイトです。
+			<p>2016年度の、名古屋市立大学 芸術工学部 芸術工学研究科の卒業・修了制作展です。</p>
+		</section>
 	</main>
 	<% include _s-footer %>
 	<% include _script %>
-	<script src="./js/s.js"></script>
-	<script src="./plugins/jquery.flex-images.min.js"></script>
-	<script>
-		$('.flex-images').flexImages({rowHeight: 200});
-	</script>
 </body>
 </html>
