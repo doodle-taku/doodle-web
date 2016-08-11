@@ -4,62 +4,95 @@
 	<% include _head %>
 </head>
 <body>
-	<header class="searched clearfix">	
+	<header class="searched clearfix">
 		<a class="header-logo" href="/"><img src="./images/header/doodle-searched.png"></a>
-		<div class="header-form">
-			<div class="form js-form">
-				<input class="form-item input js-input" type="text" list="words">
-				<img class="form-item icon" src="./images/search.png" alt="">
-			</div>
-			<% include _search-words %>
-		</div>
 		<nav class="header-nav">
-			<div class="application"><a href=""><img src="./images/header/menu.png" alt=""></a></div>
-			<div class="notification"><a href=""><img src="./images/header/bell.png" alt=""></a></div>
-			<div class="portrait"><a href=""><img src="./images/header/rider.jpg" alt=""></a></div>
+			<div class="application"><a href=""><img src="./images/header/menu.png"></a></div>
+			<div class="notification"><a href=""><img src="./images/header/bell.png"></a></div>
+			<div class="portrait"><a href=""><img src="./images/header/rider.jpg"></a></div>
 		</nav>
 	</header>
-	<main class="searched">
-		<div>
-			<ul class="search-type">
-				<li><a href="./s.html">すべて</a></li>
-				<li class="active"><a href=" ./images.html">画像</a></li>
-				<li><a href="">地図</a></li>
-				<li><a href="">ニュース</a></li>
+	<main class="kid member">
+		<div class="mv"></div>
+		<section class="content">
+			<h2>Doodle卓のメンバー</h2>
+			<ul class="members">
+				<li class="boss">
+					<img class="portrait" src="./images/kid/member/rider.png">
+					<div class="info">
+						<p class="grade">情報環境デザイン学科 4年</p>
+						<p class="name">Kazuma Matsumoto／ライダー</p>
+						<a class="link" href="" target="_blank">http://mtmtkzm.com</a>
+					</div>
+				</li>
+				<li>
+					<img class="portrait" src="./images/kid/member/takeda.png">
+					<div class="info">
+						<p class="grade">産業イノベーションデザイン学科 4年</p>
+						<p class="name">TAKEDA YUKIHIRO</p>
+						<a class="link" href="" target="_blank"></a>
+					</div>
+				</li>
+				<li>
+					<img class="portrait" src="./images/kid/member/ito.png">
+					<div class="info">
+						<p class="grade">情報環境デザイン学科 3年</p>
+						<p class="name"></p>
+						<a class="link" href="" target="_blank"></a>
+					</div>
+				</li>
+				<li>
+					<img class="portrait" src="./images/kid/member/ikebe.png">
+					<div class="info">
+						<p class="grade">情報環境デザイン学科 3年</p>
+						<p class="name"></p>
+						<a class="link" href="" target="_blank"></a>
+					</div>
+				</li>
+				<li>
+					<img class="portrait" src="./images/kid/member/cheese.png">
+					<div class="info">
+						<p class="grade">情報環境デザイン学科 2年</p>
+						<p class="name"></p>
+						<a class="link" href="" target="_blank"></a>
+					</div>
+				</li>
+				<li>
+					<img class="portrait" src="./images/kid/member/mei.png">
+					<div class="info">
+						<p class="grade">情報環境デザイン学科 2年</p>
+						<p class="name"></p>
+						<a class="link" href="" target="_blank"></a>
+					</div>
+				</li>
+				<li>
+					<img class="portrait" src="./images/kid/member/mun.png">
+					<div class="info">
+						<p class="grade">情報環境デザイン学科 2年</p>
+						<p class="name"></p>
+						<a class="link" href="" target="_blank"></a>
+					</div>
+				</li>
+				<li>
+					<img class="portrait" src="./images/kid/member/eguchi.png">
+					<div class="info">
+						<p class="grade">情報環境デザイン学科 1年</p>
+						<p class="name"></p>
+						<a class="link" href="" target="_blank"></a>
+					</div>
+				</li>
+				<li>
+					<img class="portrait" src="./images/kid/member/paul.png">
+					<div class="info">
+						<p class="grade">情報環境デザイン学科 1年</p>
+						<p class="name"></p>
+						<a class="link" href="" target="_blank"></a>
+					</div>
+				</li>
 			</ul>
-			<div class="btn setting-btn">※</div>
-		</div>
-		<ul class="photos js-width-fit flex-images">
-			<li class="item" data-w="285" data-h="234"><img src="./images/photos/1.png"></li>
-			<li class="item" data-w="477" data-h="308"><img src="./images/photos/2.png"></li>
-			<li class="item" data-w="297" data-h="198"><img src="./images/photos/3.png"></li>
-			<li class="item" data-w="327" data-h="218"><img src="./images/photos/4.png"></li>
-			<li class="item" data-w="319" data-h="180"><img src="./images/photos/7.png"></li>
-			<li class="item" data-w="497" data-h="324"><img src="./images/photos/6.png"></li>
-			<li class="item" data-w="319" data-h="180"><img src="./images/photos/7.png"></li>
-			<li class="item" data-w="285" data-h="234"><img src="./images/photos/1.png"></li>
-			<li class="item" data-w="477" data-h="308"><img src="./images/photos/2.png"></li>
-			<li class="item" data-w="297" data-h="198"><img src="./images/photos/3.png"></li>
-			<li class="item" data-w="301" data-h="370"><img src="./images/photos/3.png"></li>
-			<li class="item" data-w="497" data-h="324"><img src="./images/photos/6.png"></li>
-			<li class="item" data-w="319" data-h="180"><img src="./images/photos/7.png"></li>
-			<li class="item" data-w="497" data-h="324"><img src="./images/photos/6.png"></li>
-			<li class="item" data-w="319" data-h="180"><img src="./images/photos/7.png"></li>
-			<li class="item" data-w="285" data-h="234"><img src="./images/photos/1.png"></li>
-			<li class="item" data-w="477" data-h="308"><img src="./images/photos/2.png"></li>
-			<li class="item" data-w="297" data-h="198"><img src="./images/photos/3.png"></li>
-			<li class="item" data-w="327" data-h="218"><img src="./images/photos/4.png"></li>
-			<li class="item" data-w="301" data-h="370"><img src="./images/photos/5.png"></li>
-			<li class="item" data-w="497" data-h="324"><img src="./images/photos/6.png"></li>
-			<li class="item" data-w="319" data-h="180"><img src="./images/photos/7.png"></li>
-		</ul>
+		</section>
 	</main>
 	<% include _s-footer %>
 	<% include _script %>
-	<script src="./js/s.js"></script>
-	<script src="./plugins/jquery.flex-images.min.js"></script>
-	<script>
-		$('.flex-images').flexImages({rowHeight: 200});
-	</script>
 </body>
 </html>
