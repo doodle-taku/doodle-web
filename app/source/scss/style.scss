@@ -43,21 +43,24 @@ header {
 		padding-right: 28px;
 	}
 	.header-nav-applications {
+		display: none;
 		width: 400px;
 		padding: 1%;
 		position: absolute;
 		top: 59px;
-		right: 12px;
+		right: 40px;
+		z-index: 10;
 		background-color: #fff;
 		font-size: 0;
 		box-shadow: 0 2px 10px rgba(0,0,0,.2);
-		&:after {
+		&:before {
 			content: '';
-			border: 1px solid #ccc;
+			border-top: 1px solid rgba(0,0,0,.1);
+			border-left: 1px solid rgba(0,0,0,.1);
 			width: 13px;
 			height: 13px;
 			position: absolute;
-			top: -7px;
+			top: -8px;
 			right: 80px;
 			display: block;
 			background-color: #fff;
