@@ -23,7 +23,7 @@
 html {
 	background-color: #fff;
 	@include media(tb) {
-		background-color: #f1f1f1;
+		// background-color: #f1f1f1;
 	}
 }
 
@@ -130,6 +130,11 @@ header {
 
 main {
 	background-color: #fff;
+	.googlead {
+		width: 100%;
+		max-width: 512px;
+		overflow: hidden;
+	}
 	@include media(tb) {
 		padding: 0 10px;
 	}

@@ -55,7 +55,8 @@
 		&.image-search {
 			ul {
 				font-size: 0;
-				width: 512px;
+				width: 100%;
+				max-width: 512px;
 				overflow: hidden;
 				white-space: nowrap;
 				li {
@@ -69,6 +70,9 @@
 					img {
 						height: 100%;
 					}
+				}
+				@include media(sp) {
+					overflow: scroll;
 				}
 			}
 		}
