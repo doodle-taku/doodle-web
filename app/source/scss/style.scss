@@ -317,6 +317,10 @@ main {
 					&.boss {
 						width: 100%;
 					}
+					@include media(sp) {
+						width: 98%;
+						padding: 1%;
+					}
 				}
 				p {
 					margin: 0;
