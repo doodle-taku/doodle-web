@@ -71,8 +71,9 @@
 						height: 100%;
 					}
 				}
-				@include media(sp) {
+				@include media(tb) {
 					overflow: scroll;
+					max-width: 100%;
 				}
 			}
 		}
