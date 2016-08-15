@@ -1,6 +1,7 @@
 .words {
 	position: absolute;
 	display: block;
+	z-index: 10;
 	.word-list {
 		display: block;
 		width: 100%;
