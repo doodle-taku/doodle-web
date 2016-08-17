@@ -106,7 +106,7 @@ header {
 				display: block;
 				text-align: center;
 				padding: 20px 0 15px;
-				margin: 0;
+				margin: 0 auto;
 			}
 		}
 		.header-form {
@@ -361,9 +361,11 @@ main {
 						text-align: center;
 						&.grade {
 							font-size: 13px;
+							margin-top: 20px;
 						}
 						&.name {
 							font-size: 17px;
+							margin-top: 0px;
 							font-weight: bold;
 						}
 					}
