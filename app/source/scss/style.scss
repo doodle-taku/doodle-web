@@ -96,7 +96,10 @@ header {
 			display: inline-block;
 			margin-left: 12px;
 			vertical-align: middle;
-			background: url(' ../images/header/doodle-searched.svg') center center/100% no-repeat;
+			background-image: url(' ../images/header/doodle-searched.svg');
+			background-position: center center;
+			background-size: 100%;
+			background-repeat no-repeat;
 			width: 95px;
 			height: 42px;
 			@include media(tb) {
