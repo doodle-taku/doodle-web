@@ -151,9 +151,9 @@ main {
 	&.index {
 		.main-logo {
 			display: block;
-			width: 255px;
+			width: 300px;
 			margin: 0 auto;
-			padding: 150px 0 30px;
+			padding: 150px 0 45px;
 			@include media(tb) {
 				padding-top: 120px;
 				width: 35%;
