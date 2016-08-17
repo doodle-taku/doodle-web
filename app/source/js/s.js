@@ -2,7 +2,7 @@
 var param = window.location.search;
 var decoded = decodeURIComponent(param); // URLデコード
 decoded = decoded.substr(3); // ?p= を切り取る
-$('.js-input').val(decoded); // 検索フォームに挿入
+$('.js-input').text(decoded); // 検索フォームに挿入
 
 // 検索結果それぞれを適当に並び替える
 var $rList = $('.js-article-list').find('article');
@@ -23,3 +23,4 @@ if(window.sessionStorage) { // ウェブストレージに対応している
 	});
 }
 $('.js-article-list').css('opacity', '1');
+
