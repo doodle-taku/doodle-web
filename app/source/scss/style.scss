@@ -333,7 +333,7 @@ main {
 					}
 					@include media(sp) {
 						width: 98%;
-						padding: 1%;
+						padding: 30px 1% 0;
 					}
 				}
 
@@ -362,7 +362,7 @@ main {
 						}
 					}
 					.portrait {
-						width: 50%;
+						width: 72%;
 						border-radius: 50%;
 					}
 					@include media(tb) {
